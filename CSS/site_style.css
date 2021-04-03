@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+/*body*/
+body{
+  width : 100vw ; /* 画面幅の100％ */
+  font-family:'Noto Sans JP', sans-serif;
+  overflow-x: hidden;
+}
+*{
+    margin:0;
+    padding:0;
+}
+.logo,.logo_name{
+    display: inline-flex;
+    color: #ffffff;
+  }
+  .logo{  margin-left:30px;}
+  .logo_name{
+    font-size: 50px;
+    margin-top:5px ;
+    margin-left: 8px;
+  }
+   header{
+     width: 100%;
+    display: inline-flex;
+    background-color: rgb(0, 0, 0);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 2px solid blue;  position: fixed;
+    top: 0;
+    z-index: 10000;
+  }
+  #section_1{
+    text-align: center;
+    width:300px;
+    height:70px;
+    margin-left: 10vw;
+    margin-top:100px;
+    padding-top: 10px;
+    color: rgb(52, 105, 250);
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 0px 4px 0px rgba(0, 247, 255, 0.836);
+    
+  }
+.box_1,.box_2,.box_3,.box_4,.box_5{display: inline-block;}
+.box_1,.box_2,.box_3,.box_4,.box_5{
+       border: solid 3px #6091d3;/*線*/
+       border-radius: 10px;/*角の丸み*/}   
+.box_1{margin-top:50px;margin-left: 100px; z-index: -10;position:relative;width: 300px;height: 160px;padding: 40px;}
+.box_2{margin-top:50px;margin-left: 100px; z-index: -10;position:relative;width: 320px;height: 160px;padding: 40px 40px 30px 40px;}
+.box_3{margin-top:50px;margin-left: 100px; z-index: -10;position:relative;width: 300px;height: 160px;padding: 50px 40px 20px 40px;}
+.box_4{margin-top:50px;margin-left: 100px; z-index: -10;position:relative;width: 300px;height: 160px;padding: 20px 40px 20px 40px;}
+.box_5{margin-top:50px;margin-left: 100px; position:relative;width: 300px;height: 160px;padding: 20px 40px 20px 40px;}
+
+.date,.datesize{margin-left: -25px;margin-top: -90px;display: inline-block;position: absolute; background-color: #ffffff; font-size: 30px;}
+.web{margin-left: 25px;margin-top: -100px;display: inline-block;position: absolute; background-color: #ffffff; font-size: 30px;}
+.kyou{margin-left: -25px;margin-top: -70px;display: inline-block;position: absolute; background-color: #ffffff; font-size: 30px;}
+.site{margin-left: -25px;margin-top: -70px;display: inline-block;position: absolute; background-color: #ffffff; font-size: 30px;}
+
+.size-date{font-size: 25px;}
+.short{color: red;font-size: 30px; padding-left: 170px;}
+#google{color: rgb(124, 124, 124);font-size:20px}
+
+.github_3{margin-left: 55px;}
+.github_2{font-size:25px;}
+
+.kyouryoku{color:red;}
+.url{font-size: 20px;}
+li{ font-size:40px;}
+
+.a_1{display: block; z-index: 10;}
+.a_2{display: block; z-index: 10;}
+.a_3{display: block; z-index: 10;}
+.a_4{display: block; z-index: 10;}
+.a_5{display: block; z-index: 10;}
