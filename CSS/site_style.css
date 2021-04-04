@@ -47,7 +47,7 @@ body{
        border: solid 3px #6091d3;/*線*/
        border-radius: 10px;/*角の丸み*/}   
 .box_1{margin-top:50px;margin-left: 100px; z-index: -10;position:relative;width: 300px;height: 160px;padding: 40px;}
-.box_2{margin-top:50px;margin-left: 100px; z-index: -10;position:relative;width: 320px;height: 160px;padding: 40px 40px 30px 40px;}
+.box_2{margin-top:50px;margin-left: 100px; position:relative;width: 320px;height: 160px;padding: 40px 40px 30px 40px;}
 .box_3{margin-top:50px;margin-left: 100px; z-index: -10;position:relative;width: 300px;height: 160px;padding: 50px 40px 20px 40px;}
 .box_4{margin-top:50px;margin-left: 100px; z-index: -10;position:relative;width: 300px;height: 160px;padding: 20px 40px 20px 40px;}
 .box_5{margin-top:50px;margin-left: 100px; position:relative;width: 300px;height: 160px;padding: 20px 40px 20px 40px;}
