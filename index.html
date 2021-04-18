@@ -4,38 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width" />
   <title>ROWING</title>
-  <link rel="stylesheet" href="CSS/small.css" media="screen and (max-width:480px)">　
-<link rel="stylesheet" href="CSS/smart_600.css" media="screen and (min-width:480px) and (max-width:600px)"> 
-<link rel="stylesheet" href="CSS/smart.css" media="screen and (min-width:600px) and (max-width:800px)"> 
-<link rel="stylesheet" href="CSS/4801080.css" media="screen and (min-width:800px) and (max-width:1153px)">
-<link rel="stylesheet" href="CSS/style.css" media="screen and (min-width:1153px)">
+  <link rel="stylesheet" href="mediaquery-style/small.css" media="screen and (max-width:540px)">　
+<link rel="stylesheet" href="mediaquery-style/smart_600.css" media="screen and (min-width:540px) and (max-width:600px)"> 
+<link rel="stylesheet" href="mediaquery-style/smart.css" media="screen and (min-width:600px) and (max-width:800px)"> 
+<link rel="stylesheet" href="mediaquery-style/4801080.css" media="screen and (min-width:800px) and (max-width:1153px)">
+<link rel="stylesheet" href="mediaquery-style/style.css" media="screen and (min-width:1153px)">
   <!-- ファビコン -->
 <link rel="icon" href="img/logo.png">
  
 <!-- スマホ用アイコン -->
 <link rel="apple-touch-icon" sizes="300x300" href="img/logo.png">
- 
+<link rel="icon" type="image/png" href="./images/logo.png" sizes="192x192">
 <!-- Windows用アイコン -->
 <meta name="application-name" content="img/logo.png"/>
 <meta name="msapplication-square100x0logo" sizes="500x500" content="img/logo.png"/>
 
 <script src="Script/jquery.min.js"></script>
 <script src="Script/lightbox.min.js" type="text/javascript"></script>
-
 </head>
   <body id="page-top">
     <div id="all_all">
+      <script type="text/javascript">
+        var ua = navigator.userAgent;
+        if (ua.indexOf('iPhone') > 0 || (ua.indexOf('Android') > 0) && (ua.indexOf('Mobile') > 0)) {
+            location.href = './mobile/';
+        }
+      </script>
     <!-- モード切替スイッチ -->
-<div class="switch">
-  <label class="switch-label">
-    <input type="checkbox" id="js_mode_toggle">
-    <span class="switch-mode" id="js_rotate"></span>
-  </label>
-</div>
-<script src="Script/dark-mode.js"></script>
+      <div class="switch">
+        <label class="switch-label">
+          <input type="checkbox" id="js_mode_toggle">
+          <span class="switch-mode" id="js_rotate"></span>
+        </label>
+      </div>
+      <script src="Script/dark-mode.js"></script>
     <header>
       
-      <h1 class="logo"><img src="img/logo.png" alt="ROWING" ></h1>
+     <a href="index.html"><img src="img/logo.png" alt=""class="logo"></a>
       <h2 class="logo_name">ROWING</h2>
       
       <nav>
@@ -43,7 +48,7 @@
         <li class="header_li"><a href="#page-top">TOP</a></li>
         <li class="header_li"><a href="#s1">シングルスカル</a></li>
         <li class="header_li"><a href="#d2">ダブルスカル</a></li>
-        <li class="header_li"><a href="#f4">フォア</a></li>
+        <li class="header_li"><a href="#f4">クォド</a></li>
         </ul>
        
       </nav>
@@ -51,16 +56,16 @@
     <div class="all">
      
       <section class="scroll">
-        <div class="wrapper">
+        
           <div class="contents no3">
             <h3 class="animation-1">ボートの魅力</h3>
               　　<p class="animation-2 animation">ボート競技（ROWING）は水上に浮かべ、<br>オールを使って後ろ向きにゴールを目ぜして漕ぐ競技</p>
                   <p class="animation-3 animation">その精神は「一艇ありて一人なし」というほど団体スポーツ</p>
                   <p class="animation-4 animation">協調性が最も重要なスポーツ</p>
-            <video autoplay muted loop class="move"><source typr="video/mp4"src="img/ROWING_main.mp4" ></video>
+            <video autoplay muted loop class="move"><source type="video/mp4"src="img/ROWING_main.mp4" ></video>
             <div class="overlay"></div>
           </div>
-        </div>
+        
       <script src="Script/jquery.min.js"></script>
       <script>
       $(function () {
@@ -100,7 +105,6 @@ $(window).scroll(function(){
   }
  });
 });
-
 </script>
 </section>
 <section>
@@ -108,17 +112,17 @@ $(window).scroll(function(){
       <p class="animation-6 animation" id="s1">シングルスカル</p>
        <p class="animation animation-9">シングルスカルは、一人のり用の手漕ぎボート</p>
        <p class="animation animatio-14">バランスがとても取りずらい</p>
-      <img class="s1_jpg animation" src="img/N1.jpg" >
+      <img class="s1_jpg animation" src="img/N1.webp" >
       <div id="daburu"></div>
       <p class="animation-7 animation"id="d2">ダブルスカル</p>
       <p class="animation animatio-10">ダブルスカルは二人のり用の手漕ぎボート</p>
     　<p class="animation animatio-11">二人で上手く合わせないと速く進めることができない<br>上手く漕げればとても速い</p>
-    <img class="d2_jpg animation"src="img/N2(1).jpg">
+    <img class="d2_jpg animation"src="img/N2(1).webp">
     <div id="for"></div>
-      <p class="animation-8 animation"id="f4">フォア</p>
-      <p class="animation animatio-12">フォアは四人のりの手漕ぎボート</p>
+      <p class="animation-8 animation"id="f4">クォド</p>
+      <p class="animation animatio-12">クォドは四人のりの手漕ぎボート</p>
       <p class="animation animatio-13">合わせるのがとても難しい</p>
-      <img class="f4_jpg animation" src="img/Nakul.jpg">
+      <img class="f4_jpg animation" src="img/Nakul.webp">
       <div class="up">
       <a  href="img/kf_kouzou01l.png" class="animation" data-lightbox="group">各部分の名称</a>
     </div>
@@ -131,7 +135,7 @@ $(window).scroll(function(){
             viewBox="60 50 1170 6700"
            preserveAspectRatio="xMidYMid meet">
           
-              <svg><defs><clipPath id="_clipPath_ZeMvT7mQvBvEvGvbCt0Zb7W4DsgYSLLM"><rect width="120vw" height="7000vw"/></clipPath></defs>
+              <svg><defs><clipPath id="_clipPath_ZeMvT7mQvBvEvGvbCt0Zb7W4DsgYSLLM"><rect width="250vw" height="7000vw"/></clipPath></defs>
             <g class="svg-icon" id="svg-animation" transform="translate(0.000000,7000.000000) scale(0.100000,-0.100000)" stroke="none">
               <g>
           <path class="st0" d="M9590 68321 c-5 -11 -10 -25
@@ -495,7 +499,7 @@ $(window).scroll(function(){
               <!--class="river-2 m_ -->
               </g>
              
-                <g  clip-path="url(#_clipPath_ZeMvT7mQvBvEvGvbCt0Zb7W4DsgYSLLM)" >     
+                <g class="wave_svg" clip-path="url(#_clipPath_ZeMvT7mQvBvEvGvbCt0Zb7W4DsgYSLLM)" >     
                   <path  class="st4 river-1" d=" M 629.322 494.552 Q 632.889 549.931 663.185 541.962 Q 693.482 533.994 706.562 527.047" fill="none" vector-effect="non-scaling-stroke" stroke-width="2" stroke="rgb(0,0,0)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
                   <path class="st3 river-1"d=" M 661.407 421.604 Q 664.524 455.524 685.485 450.988 Q 706.446 446.452 715.455 442.348" fill="none" vector-effect="non-scaling-stroke" stroke-width="2" stroke="rgb(0,0,0)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
                   <path class="st2 river-1"d=" M 693.491 348.628 Q 696.316 376.248 714.123 372.66 Q 731.93 369.073 739.573 365.778" fill="none" vector-effect="non-scaling-stroke" stroke-width="2" stroke="rgb(0,0,0)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
@@ -522,8 +526,8 @@ $(window).scroll(function(){
                   <path class="river-2 m_650"d=" M 650.814 1260.558 Q 538.737 1349.065 524.868 1363.174" fill="none" vector-effect="non-scaling-stroke" stroke-width="2" stroke="rgb(0,0,0)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
                   <path class="river-2 m_210"d=" M 210.323 1737.38 L 210.323 1737.38 Q 214.241 1766.814 233.701 1798.513 Q 266.001 1851.127 269.394 1867.353 L 269.394 1867.353" fill="none" vector-effect="non-scaling-stroke" stroke-width="2" stroke="rgb(0,0,0)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
                   <path class="river-2 m_125"d=" M 125.181 1704.476 Q 149.387 1808.022 160.702 1844.138 C 176.538 1894.688 229.138 1968.734 255.987 2007.448" fill="rgba(255,255,255,0)" vector-effect="non-scaling-stroke" stroke-width="2" stroke="rgb(0,0,0)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
-                  <path class="river-2 m_341"d=" M 341.919 1920 L 341.919 1920 Q 357.438 1951.063 388.442 1973.082 Q 439.901 2009.629 449.612 2025.828 L 449.612 2025.828" fill="none" vector-effect="non-scalingke" stroke-width="2" stroke="rgb(0,0,0)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
-                  <path class="river-2 m_597"d=" M 597.985 1007.292 L 597.985 1007.292 Q 586.581 1033.818 563.241 1054.419 Q 524.503 1088.61 517.321 1102.588 L 517.321 1102.588" fill="none" vector-effect="non-scaling-stroke" stroke-width="2" stroke="rgb(0,0,0)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
+                  <path class="river-2 m_341"d=" M 341.919 1920 L 341.919 1920 Q 357.438 1951.063 388.442 1973.082 Q 439.901 2009.629 449.612 2025.828 L 449.612 2025.828" fill="none" vector-effect="non-scalingke"  stroke="rgb(0,0,0)" stroke-linejoin="miter" stroke-linecap="square"stroke-width="1px" />
+                  <path class="river-2 m_597"d=" M 597.985 1007.292 L 597.985 1007.292 Q 586.581 1033.818 563.241 1054.419 Q 524.503 1088.61 517.321 1102.588 L 517.321 1102.588" fill="none" vector-effect="non-scaling-stroke"  stroke="rgb(0,0,0)" stroke-linejoin="miter" stroke-linecap="square" />
                   <path class="river-2 m_435"d=" M 435.719 2222.357 Q 435.719 2222.357 435.719 2222.357 Q 504.683 2300.236 523.039 2313.292 C 541.395 2326.348 560.82 2343.818 573.457 2354.957 Q 601.892 2376.866 622.112 2392.796" fill="none" vector-effect="non-scaling-stroke" stroke-width="2" stroke="rgb(0,0,0)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
                   <path class="river-2 m_543"d=" M 543.858 2156.12 L 543.858 2156.12 Q 568.694 2166.477 587.523 2187.268 Q 618.773 2221.777 631.824 2228.266 L 631.824 2228.266" fill="none" vector-effect="non-scaling-stroke" stroke-width="2" stroke="rgb(0,0,0)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
                   <path class="river-2 m_296"d=" M 296.489 1982.497 Q 296.489 1982.497 296.489 1982.497 Q 332.507 2029.645 352.106 2053.269 C 365.058 2068.88 376.947 2082.012 387.774 2092.666 Q 409.333 2116.776 425.161 2126" fill="none" vector-effect="non-scaling-stroke" stroke-width="2" stroke="rgb(0,0,0)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
@@ -580,7 +584,7 @@ $(window).scroll(function(){
                 {
                     new Vivus('svg-animation', 
                     {
-                      duration: 800 ,//アニメーションの遅さ　値が大きくなればなるほど、描画が遅くなる
+                      duration: 450 ,//アニメーションの遅さ　値が大きくなればなるほど、描画が遅くなる
                       start: 'autostart',
                   type: 'delayed' //線が順に出るアニメーション
                       
@@ -618,8 +622,8 @@ $(window).scroll(function(){
       </div>
      <section>
      
-      <iframe class="maps"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6461.338539252809!2d140.55973378737713!3d35.93059456813186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602256291b9cc981%3A0xb564fcfa1fb9ba92!2z5r2u5p2l5biC56uL44Oc44O844OI44K744Oz44K_44O8IOOBguOCgeOCk-OBvA!5e0!3m2!1sja!2sjp!4v1615618316529!5m2!1sja!2sjp" width="40%" height="50%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-       <img src="img/Amenbo.png" class="Amenbo">
+      <iframe class="maps"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6461.338539252809!2d140.55973378737713!3d35.93059456813186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602256291b9cc981%3A0xb564fcfa1fb9ba92!2z5r2u5p2l5biC56uL44Oc44O844OI44K744Oz44K_44O8IOOBguOCgeOCk-OBvA!5e0!3m2!1sja!2sjp!4v1615618316529!5m2!1sja!2sjp" width="200px" height="250px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+       <img src="img/Amenbo.webp" class="Amenbo">
     <p class="bo-to">ボート協会</p>
       <a href="https://www.jara.or.jp/" class="row"><img src="img/jara-logo.png" width="140%"></a>
       <a href="https://jhs-rowing.com/" class="roiw"><img src="img/jr-high-school-row.png"  width="140%"></a>
@@ -633,6 +637,5 @@ $(window).scroll(function(){
         <p class="mozi">&copy;2021. K.A</p>
       </footer>
     <script src="Script/script.js"></script></div>
-    <h5>まだ、このスマホの画面サイズに対応していません。後に対応させます。<br>PCには対応しています。<br><a href="https://rowing.netlify.app/">https://rowing.netlify.app/</a></h5>
   </body>
-    </html>
+</html>
